@@ -166,12 +166,29 @@ section p {
 
 .flex-container-02 {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
-.flex-container-02 img {
+.flex-container-02 .runner-text {
+  /* flex: 1 1 50%; */
+  margin-right: 40%;
+}
+
+.flex-container-02 .runner-image {
+  /* flex: 1 1 50%; */
+}
+
+.flex-container-02 .runner-image img {
   border-radius: 1.1em;
+}
+
+.flex-container-02 .runner-text h2 {
+  margin-bottom: 10px;
+}
+
+.flex-container-02 .runner-text p {
+  margin-bottom: 20px;
 }
 
 .grid-container {
@@ -296,17 +313,22 @@ section p {
 
 
 .bmi-status {
-    flex: 50%;
+    /* flex: 50%; */
+    margin-right: 40%;
 }
 
 .bmi-calculate {
-  flex: 50%;
+  /* flex: 50%; */
 } 
 
+table {
+  width: 19em;
+  height: 13.5em;
+}
 
 .bmi-status table th, td {
     background-color: rgba(255, 255, 255, 0.1);
-    padding: 1em;
+    padding: 0.3em;
 }
 
 .bmi-status table th {
@@ -466,10 +488,16 @@ hr {
 
 
 @media screen and (max-width: 576px) {
+
   .bmi, .flex-container-02, .flex-container, .banner, header nav ul, .container, .footer-container {
     flex-direction: column;
     align-items: start;
     margin-bottom: 20px;
+    overflow: auto;
+  }
+
+  .flex-container-02 .runner-text, .runner-image {
+    margin-bottom: 30px;
   }
 
   .bmi-title h3, p{
@@ -484,6 +512,10 @@ hr {
 
   .bmi-status h3 {
     text-align: start;
+  }
+
+  hr {
+    width: 100%;
   }
 
 }
