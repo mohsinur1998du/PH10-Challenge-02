@@ -264,6 +264,10 @@ section p {
   background: linear-gradient(rgba(6, 255, 210, 0.5), rgba(255, 255, 255, 0.5)), url("../images/exercise1.png");
 }
 
+[class*="text-overlay-0"] {
+  background-color: unset;
+}
+
 .text-overlay-01 {
   position: absolute;
   top: 10rem;
