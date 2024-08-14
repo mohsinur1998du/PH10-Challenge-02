@@ -63,13 +63,13 @@ header {
   gap: 2rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 39px;
-  padding: 8px 10px;
+  padding: 8px 8px 8px 0px;
 }
 
 .home {
   background-color: rgba(230, 83, 60, 1);
   border-radius: 46px;
-  padding: 8px 10px;
+  padding: 8px 8px;
 }
 
 .nav-options ul li a {
@@ -255,8 +255,6 @@ section p {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  width: 100%;
-  margin: 0;
 }
 
 
@@ -444,6 +442,17 @@ input, select {
   margin-top: 34px;
 }
 
+.section-05 {
+  /* padding: 10px;
+  text-align: center; */
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
 
 .team-title {
   text-align: center;
@@ -453,10 +462,12 @@ input, select {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   background-color: rgba(0, 0, 0, 0.1);
+  gap: 20px;
+  padding: 25px;
 }
 
-[class*="team-grid-0"] img {
-  padding: 20px;
+[class*="team-grid-0"] {
+  border-radius: 1.2rem;
 }
 
 .team-grid-01 {
@@ -505,11 +516,18 @@ input, select {
 
 .team-grid-text {
   position: absolute;
-  top: 157px;
-  left: 5%;
+  top: 12rem;
+  left: 2rem;
+  background-color: unset;
+}
+
+.team-grid-text h5 {
+  background-color: unset;
+  margin-bottom: 3px;
 }
 
 .team-grid-text p {
+  background-color: unset;
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -611,14 +629,14 @@ hr {
     width: 9rem;
     height: 4rem;
     top: 1.5rem;
-    left: 15.5rem;
+    left: 12rem;
   }
 
   .banner-badge-02 {
     width: 9rem;
     height: 4rem;
     bottom: 5rem;
-    right: 15rem;
+    right: 12rem;
   }
 
   .banner-02 img {
@@ -651,6 +669,32 @@ hr {
     border-radius: 2rem;
     margin-right: 0.8rem;
   }
+
+  /* .grid-container {
+    grid-template-columns: 1fr;
+  } */
+
+
+  /* .grid-item-01 {
+    grid-column: 1 / span 2;
+  }
+
+  .grid-item-02 {
+    grid-column: 3 / span 2;
+  }
+  .grid-item-03 {
+    grid-column: 1 / span 2;
+  }
+  .grid-item-04 {
+    grid-column: 3 / span 2;
+  }
+  .grid-item-05 {
+    grid-column: 1 / span 2;
+  }
+  .grid-item-06 {
+    grid-column: 3 / span 2;
+  } */
+
 
   .bmi, .flex-container-02, .flex-container, .banner, header nav ul, .footer-container {
     flex-direction: column;
@@ -705,10 +749,17 @@ hr {
     text-align: center;
   }
 
-  
-  .team-grid {
-    display: block;
+  .team {
+    width: 100%;
+  }
 
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0px;
+  }
+
+  [class*="team-grid-0"] {
+    grid-column: 1 / span 2;
   }
 
   hr {
