@@ -20,18 +20,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #222;
+  background: rgba(0, 0, 0, 1);
   color: #fff;
 }
 
 html {
-  width: 90%;
-  margin: 0 auto;
+  margin: 0 5%;
 }
 
 body {
-  margin-left: auto;
-  margin-right: auto;
+  width: 95%;
 }
 
 p, li a {
@@ -39,128 +37,191 @@ p, li a {
 }
 
 /* Navigation bar Styles */
-.container {
-  margin: auto;
+.nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.container .logo {
+.nav-container .logo {
   color: rgba(230, 83, 60, 1);
   font-size: 36px;
   font-weight: 800;
 }
 
-header {
-  padding: 1em 0;
+.hamburger {
+  display: none;
 }
 
-header nav ul {
+header {
+  padding: 1rem 0;
+}
+
+.nav-options ul {
   list-style: none;
   display: flex;
-  gap: 2em;
+  gap: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 39px;
+  padding: 8px 10px;
 }
 
-header nav ul li a {
+.home {
+  background-color: rgba(230, 83, 60, 1);
+  border-radius: 46px;
+  padding: 8px 10px;
+}
+
+.nav-options ul li a {
   color: #fff;
   text-decoration: none;
 }
 
+
+
 .banner {
-  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* margin: 0 auto; */
 }
 
-.banner-02 {
-  position: relative;
+
+.banner-01 {
+  width: calc(95% / 2);
 }
 
-.banner-01 h1,
-p {
+.banner-01 .banner-title, .banner-subtitle {
   margin-bottom: 28px;
 }
 
-.banner-01 h1 {
-  font-size: 78px;
-  font-weight: 900;
+
+.banner-01 .banner-title {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.2;
 }
 
-.banner-01 span {
+.banner-01 .banner-subtitle {
+    font-size: 1.2rem;
+    /* margin: 20px 0; */
+    line-height: 1.2;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.banner-01 .banner-title span {
   font-size: 78px;
+  font-weight: 400;
+}
+
+.btn, .btn-normal{
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  margin-right: 0.8rem;
 }
 
 .btn {
-  border: none;
-  padding: 1em 2em;
-  border-radius: 2em;
-  margin-right: 0.8em;
   background-color: rgb(230, 83, 60);
 }
 
 .btn-normal {
-  border: none;
-  padding: 1em 2em;
-  border-radius: 2em;
-  margin-right: 0.8em;
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
 }
 
-.banner-btn-01 {
-  position: absolute;
-  width: 8em;
-  height: 6em;
-  right: 0.5em;
-  top: 10em;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.1);
+.banner-02 {
+  position: relative;
   text-align: center;
+  background: url(../images/Images2.png) no-repeat center center;
+  width: 22rem;
+  height: 34rem;
 }
 
-.banner-btn-02 {
+
+
+.banner-badge-01 {
   position: absolute;
-  width: 8em;
-  height: 6em;
-  bottom: 0.5em;
-  left: 0.2em;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 11rem;
+  height: 6rem;
+  left: 15rem;
+  top: 7rem;
+  padding: 0.5rem 1.3rem;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.1);
-  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
+.banner-badge-02 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 11rem;
+  height: 6rem;
+  bottom: 3rem;
+  right: 15rem;
+  border-radius: 12px;
+  padding: 5px 10px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.banner-badge-dot {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: rgba(230, 83, 60, 1);
+}
+
+.banner-badge-02 .banner-badge-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-badge-number {
+    text-align: start;
+    font-weight: bold;
+    font-size: 24px;
+    color: rgba(250, 250, 249, 1);
+}
+
+.banner-badge-label {
+    text-align: start;
+    color: rgba(239, 237, 232, 0.65);
+    font-size: 16px;
+    opacity: 0.8; /* Slightly lighter text for the label */
+}
 
 .section-01 {
   text-align: center;
 }
 
 section h2 {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 section p {
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
 }
 
 .flex-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .flex-container img {
   border-radius: 50%;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 .flex-container h3 {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
 }
 
 .section-02 {
-  border-radius: 1.1em;
+  border-radius: 1.1rem;
   background: rgba(34, 34, 34, 0.5);
 }
 
@@ -180,7 +241,7 @@ section p {
 }
 
 .flex-container-02 .runner-image img {
-  border-radius: 1.1em;
+  border-radius: 1.1rem;
 }
 
 .flex-container-02 .runner-text h2 {
@@ -194,95 +255,97 @@ section p {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  width: 100%;
+  margin: 0;
 }
 
-[class*="grid-item-0"] img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-}
 
 .grid-item-01 {
   grid-column: 1 / span 2;
   position: relative;
-  background: linear-gradient(rgba(6, 255, 210, 0.5), rgba(255, 255, 255, 0.5)), url("../images/Exercise\ 1.jpg");
-  background-size: cover;
+  background: linear-gradient(rgba(6, 255, 210, 0.5), rgba(255, 255, 255, 0.5)), url("../images/exercise1.png");
 }
 
 .text-overlay-01 {
   position: absolute;
-  top: 157px;
-  left: 5%;
-  background-color: unset;
+  top: 10rem;
+  left: 1rem;
 }
 
 .grid-item-02 {
   grid-column: 3 / span 2;
   position: relative;
-  background: linear-gradient(rgba(255, 0, 0, 0.3), rgba(255, 255, 255, 0.5)), url("../images/Exercise\ 2.png");
-  background-size: cover;
+  background: linear-gradient(rgba(255, 0, 0, 0.3), rgba(255, 255, 255, 0.5)), url("../images/exercise2.png");
 }
 
 .text-overlay-02 {
   position: absolute;
-  top: 40px;
-  left: 5%;
+  top: 2.5rem;
+  left: 1rem;
 }
 
 
 .grid-item-03 {
   grid-column: 5 / span 2;
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5)), url("../images/exercise3.png");
 }
 
 .text-overlay-03 {
   position: absolute;
-  top: 157px;
-  left: 5%;
+  top: 10rem;
+  left: 1rem;
 }
 
 .grid-item-04 {
   grid-column: 1 / span 2;
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5)), url("../images/Exercise\ 4.png");
-  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5)), url("../images/exercise4.png");
 }
 
 .text-overlay-04 {
   position: absolute;
-  top: 25px;
-  left: 60%;
+  top: 1.5rem;
+  left: 14rem;
 }
 
 
 .grid-item-05 {
   grid-column: 3 / span 2;
   position: relative;
-  background: linear-gradient(rgba(66, 255, 0, 0.3), rgba(255, 255, 255, 0.5)), url("../images/Exercise\ 5.jpg");
-  background-size: cover;
+  background: linear-gradient(rgba(66, 255, 0, 0.3), rgba(255, 255, 255, 0.5)), url("../images/exercise5.png");
 }
 
 .text-overlay-05 {
   position: absolute;
-  top: 157px;
-  left: 5%;
+  top: 10rem;
+  left: 1rem;
 }
 
 
 .grid-item-06 {
   grid-column: 5 / span 2;
   position: relative;
-  background: linear-gradient(rgba(0, 71, 255, 0.3), rgba(255, 255, 255, 0.5));
-  background-size: cover;
+  background: linear-gradient(rgba(0, 71, 255, 0.3), rgba(255, 255, 255, 0.5)), url("../images/exercise6.png");
 }
 
 .text-overlay-06 {
   position: absolute;
-  top: 157px;
-  left: 5%;
+  top: 10rem;
+  left: 1rem;
 }
 
+[class*="grid-item-0"] {
+  height: 15.5rem;
+  background-size: cover;
+}
+
+
+[class*="text-overlay-0"] p {
+  font-size: 14px;
+   background-color: rgba(226, 219, 219, 0.226);
+   color: rgba(255, 255, 255, 1);
+}
 
 [class*="section-"] {
     margin-bottom: 100px;
@@ -294,41 +357,36 @@ section p {
   flex-direction: column;
 }
 
+.bmi-title {
+  align-items: center;
+  margin: 5rem auto;
+  
+}
+
+.activity-select {
+  width: 100%;
+}
 
 .bmi-title h3 {
     font-size: 35px;
-}
-
-.bmi-title {
-    text-align: ;
+    margin-bottom: 14px;
 }
 
 
 .bmi {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
-
-
-.bmi-status {
-    /* flex: 50%; */
-    margin-right: 40%;
-}
-
-.bmi-calculate {
-  /* flex: 50%; */
-} 
 
 table {
-  width: 19em;
-  height: 13.5em;
+  width: 19rem;
+  height: 13.5rem;
 }
 
 .bmi-status table th, td {
     background-color: rgba(255, 255, 255, 0.1);
-    padding: 0.3em;
+    padding: 0.3rem;
 }
 
 .bmi-status table th {
@@ -354,14 +412,36 @@ table {
   margin-bottom: 40px;
 }
 
+
+.bmi-status {
+    /* flex: 50%; */
+    margin-right: 20%;
+}
+
+.bmi-form-grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+#bmi-form-grid-05 {
+  grid-column: 1 / span 2;
+}
+
+
 input, select {
-    width: 17em;
-    height: 3em;
+    width: 100%;
+    height: 3rem;
     padding-left: 10px;
-    margin-bottom: 12px;
+    /* margin-bottom: 5px; */
     border-radius: 8px;
     color: rgba(255, 255, 255, 0.4);
     border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.bmi-calculate .btn {
+  margin-top: 34px;
 }
 
 
@@ -371,20 +451,18 @@ input, select {
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* [class*="team-grid-0"] img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-} */
+[class*="team-grid-0"] img {
+  padding: 20px;
+}
 
 .team-grid-01 {
   grid-column: 1 / span 2;
   position: relative;
-  background-image: url("../images/trainer1.png");
-  background-size: cover;
+  background: url("../images/trainer1.png") no-repeat center center;
 }
 
 
@@ -392,51 +470,58 @@ input, select {
 .team-grid-02 {
   grid-column: 3 / span 2;
   position: relative;
-  background-image: url("../images/trainer2.png");
-  background-size: cover;
+  background: url("../images/trainer2.png") no-repeat center center;
 }
 
 .team-grid-03 {
   grid-column: 5 / span 2;
   position: relative;
-  background-image: url("../images/trainer3.png");
-  background-size: cover;
+  background: url("../images/trainer3.png") no-repeat center center;
 }
 
 .team-grid-04 {
   grid-column: 1 / span 2;
   position: relative;
-  background-image: url("../images/trainer4.png");
-  background-size: cover;
+  background: url("../images/trainer4.png") no-repeat center center;
 }
 
 .team-grid-05 {
   grid-column: 3 / span 2;
   position: relative;
-  background-image: url("../images/trainer5.png");
-  background-size: cover;
+  background: url("../images/trainer5.png") no-repeat center center;
 }
 
 .team-grid-06 {
   grid-column: 5 / span 2;
   position: relative;
-  background-image: url("../images/trainer6.png");
-  background-size: cover;
+  background: url("../images/trainer6.png") no-repeat center center;
 } 
+
+
+[class*="team-grid-0"] {
+  width: 22rem;
+  height: 16rem;
+}
 
 .team-grid-text {
   position: absolute;
   top: 157px;
   left: 5%;
-  background-color: unset;
 }
+
+.team-grid-text p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* footer {
+  background-color: rgba(255, 255, 255, 0.1);
+} */
 
 
 
 .footer-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin-top: 100px;
   margin-bottom: 100px;
 }
@@ -453,14 +538,14 @@ input, select {
   font-size: 70px;
   font-weight: 700;
   color: rgba(230, 83, 60, 1);
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 
 .footer-link-01 h4, .footer-link-02 h4 {
   font-size: 32px;
   font-weight: 600;
-  margin-bottom: 30px;
+  margin-bottom: 39px;
 }
 
 .footer-link-01 ul li, .footer-link-02 ul li {
@@ -489,24 +574,126 @@ hr {
 
 @media screen and (max-width: 576px) {
 
-  .bmi, .flex-container-02, .flex-container, .banner, header nav ul, .container, .footer-container {
+  .nav-options {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .banner {
+    flex-direction: column;
+  }
+
+  /* .banner-01 {
+    padding-right: 0;
+    margin-right: 0;
+  } */
+
+
+  .banner-01, .banner-02 {
+    width: 95%;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+
+  .banner-01 h3 {
+    font-size: 36px;
+    font-weight: 900;
+  }
+
+  .banner-01 span {
+    font-size: 36px;
+  }
+
+  .banner-badge-01 {
+    width: 9rem;
+    height: 4rem;
+    top: 1.5rem;
+    left: 15.5rem;
+  }
+
+  .banner-badge-02 {
+    width: 9rem;
+    height: 4rem;
+    bottom: 5rem;
+    right: 15rem;
+  }
+
+  .banner-02 img {
+    width: 15.5rem;
+    height: 15.5rem;
+  }
+
+  .banner-badge-dot {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .banner-badge-number {
+    font-size: 20px;
+  }
+
+  .banner-badge-label {
+    font-size: 9px;
+  }
+
+  .banner-buttons {
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+  }
+
+  .btn, .btn-normal{
+    border: none;
+    padding: 1rem 1rem;
+    border-radius: 2rem;
+    margin-right: 0.8rem;
+  }
+
+  .bmi, .flex-container-02, .flex-container, .banner, header nav ul, .footer-container {
     flex-direction: column;
     align-items: start;
     margin-bottom: 20px;
     overflow: auto;
   }
 
+  .bmi-calculate input, select {
+    width: 100%;
+  }
+
+  .section-01 p {
+    text-align: center;
+  }
   .flex-container-02 .runner-text, .runner-image {
     margin-bottom: 30px;
   }
 
+  .flex-container div p {
+    text-align: center;
+  }
+
+  .runner-image img {
+    width: 95%;
+  }
+
+  .section-04 .bmi-container table, form {
+    width: 95%;
+  }
+
   .bmi-title h3, p{
-    text-align: start;
+    /* text-align: start; */
     margin: 20px 20px 20px 0px;
   }
 
+  .bmi-status {
+    /* flex: 50%; */
+    margin-right: 0;
+}
+
   .bmi-status, .bmi-calculate {
-    flex: 100%;
+    /* flex: 100%; */
     margin-bottom: 50px;
   }
 
@@ -514,8 +701,22 @@ hr {
     text-align: start;
   }
 
+  .team-title p {
+    text-align: center;
+  }
+
+  
+  .team-grid {
+    display: block;
+
+  }
+
   hr {
     width: 100%;
+  }
+
+  .footer-logo, .footer-link-01 {
+    margin-bottom: 20px;
   }
 
 }

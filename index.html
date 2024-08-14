@@ -12,43 +12,47 @@
   </head>
   <body class="inter-normal">
     <header>
-      <div class="container">
+      <nav class="nav-container">
         <div class="logo">Fitness</div>
-        <nav>
+        <div class="nav-options">
           <ul>
-            <li><a href="#">Home</a></li>
+            <li><a class="home" href="#">Home</a></li>
             <li><a href="#">Service</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">About</a></li>
           </ul>
-        </nav>
-      </div>
-      <div class="banner">
-        <div class="banner-01">
-          <h1>
-            Get body in<br /><span class="miama-normal">shape</span> & stay<br />healthy
-          </h1>
-          <p>A huge selection of tools and exercises to stay fit and healthy</p>
-          <div class="banner-buttons">
-            <button class="btn">Join Club Now</button>
-            <button class="btn-normal">Download App</button>
-          </div>
         </div>
-        <div class="banner-02">
-          <img src="./images/Images 2.png" alt="" />
-          <button class="banner-btn-01">
-            <h3>500+</h3>
-            <p>Free Workout Videos</p>
-          </button>
-          <button class="banner-btn-02">
-            <h3>300+</h3>
-            <p>Video Tutorial</p>
-          </button>
-        </div>
-      </div>
+        <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+      </nav>
     </header>
 
     <main>
+      <section class="section-00">
+        <div class="banner">
+          <div class="banner-01">
+            <div class="banner-title">
+              Get body in<br><span class="miama-normal">shape</span> & stay<br>healthy</div>
+            <div class="banner-subtitle">A huge selection of health and fitness content, healthy recipes and transformation stories to help you get fit and stay fit!</div>
+            <div class="banner-buttons">
+              <button class="btn">Join Club Now</button>
+              <button class="btn-normal">Download App</button>
+            </div>
+          </div>
+          <div class="banner-02">
+            <div class="banner-badge-01">
+              <div class="banner-badge-number">500+</div>
+              <div class="banner-badge-label">Free Workout Videos</div>
+            </div>
+            <div class="banner-badge-02">
+              <div class="banner-badge-dot"></div>
+              <div class="banner-badge-text">
+                <div class="banner-badge-number">350+</div>
+                <div class="banner-badge-label">Video Tutorial</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="section-01">
         <h2>Change Your Habits</h2>
         <p>
@@ -57,22 +61,22 @@
         </p>
         <div class="flex-container">
           <div>
-            <img src="./images/image 3.png" alt="" />
+            <img src="./images/image3.png" alt="" />
             <h3>Movement</h3>
             <p>We believe fitness should be accessible to everyone</p>
           </div>
           <div>
-            <img src="./images/image 2.png" alt="" />
+            <img src="./images/image2.png" alt="" />
             <h3>Time</h3>
             <p>We believe fitness should be accessible to everyone</p>
           </div>
           <div>
-            <img src="./images/image 4.png" alt="" />
+            <img src="./images/image4.png" alt="" />
             <h3>Practice</h3>
             <p>We believe fitness should be accessible to everyone</p>
           </div>
           <div>
-            <img src="./images/image 5.png" alt="" />
+            <img src="./images/image5.png" alt="" />
             <h3>Weight Loss</h3>
             <p>We believe fitness should be accessible to everyone</p>
           </div>
@@ -102,36 +106,22 @@
         </p>
         <div class="grid-container">
           <div class="grid-item-01">
-            <div class="text-overlay-01">
-              <p>Lunging stretch.</p>
-            </div>
+            <div class="text-overlay-01">Lunging stretch.</div>
           </div>
           <div class="grid-item-02">
-            <div class="text-overlay-02">
-              <p>Incline push-up.</p>
-            </div>
+            <div class="text-overlay-02">Incline push-up.</div>
           </div>
           <div class="grid-item-03">
-            <div class="text-overlay-03">
-              <p>Box jump or hurdle jump.</p>
-            </div>
-            <img src="./images/Exercise 3.png" alt="" />
+            <div class="text-overlay-03">Box jump or hurdle jump.</div>
           </div>
           <div class="grid-item-04">
-            <div class="text-overlay-04">
-              <p>Lunging stretch.</p>
-            </div>
+            <div class="text-overlay-04">Lunging stretch.</div>
           </div>
           <div class="grid-item-05">
-            <div class="text-overlay-05">
-              <p>Reverse Lunge.</p>
-            </div>
+            <div class="text-overlay-05">Reverse Lunge.</div>
           </div>
           <div class="grid-item-06">
-            <div class="text-overlay-06">
-              <p>Bicycle Crunch.</p>
-            </div>
-            <img src="./images/Exercise 6.jpg" alt="" />
+            <div class="text-overlay-06">Bicycle Crunch.</div>
           </div>
         </div>
       </section>
@@ -140,10 +130,9 @@
           <div class="bmi-title">
             <h3>BMI Calculator</h3>
             <p>
-              We believe fitness should be accessible to everyone, everywhere,
-              regardless of income or access to a gym.
+              We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.
             </p>
-          </div>
+        </div>
           <div class="bmi">
             <div class="bmi-status">
               <div><h3>BMI Calculator Chart</h3></div>
@@ -183,27 +172,25 @@
                   We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.
                 </p>
               </div>
-              <div>
-                <form action="">
-                  <input type="text" placeholder="Height/cm" />
-                  <input type="text" placeholder="Weight/kg" /><br>
-                  <input type="text" placeholder="age" />
-                  <select name="" id="">
-                    <option value="">sex</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                  </select><br>
-                  <select name="" id="">
-                    <option value="">Select an activity factor</option>
-                  </select><br>
-                  <button class="btn" type="button">Calculate</button>
-                </form>
+              <div class="bmi-form-grid">
+                <input type="text" placeholder="Height/cm">
+                <input type="text" placeholder="Weight/kg">
+                <input type="text" placeholder="Age">
+                <select name="" id="">
+                  <option value="">Sex</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+                <select name="" id="bmi-form-grid-05">
+                  <option value="activity">Select an activity factor</option>
+                </select>
               </div>
+              <button class="btn" type="button">Calculate</button>
             </div>
           </div>
         </div>
       </section>
-      <!-- <section class="section-05">
+      <section class="section-05">
         <div class="team">
           <div class="team-title">
             <h2>Meet Our Team</h2>
@@ -212,43 +199,43 @@
           <div class="team-grid">
             <div class="team-grid-01">
               <div class="team-grid-text">
-                <h3>Jerome Bell</h3>
+                <h5>Jerome Bell</h5>
                 <p>Trainer</p>
               </div>
             </div>
             <div class="team-grid-02">
               <div class="team-grid-text">
-                <h3>Cameron Williamson</h3>
+                <h5>Cameron Williamson</h5>
                 <p>Trainer</p>
               </div>
             </div>
             <div class="team-grid-03">
               <div class="team-grid-text">
-                <h3>Darrell Steward</h3>
+                <h5>Darrell Steward</h5>
                 <p>Trainer</p>
               </div>
             </div>
             <div class="team-grid-04">
               <div class="team-grid-text">
-                <h3>Dianne Russell</h3>
+                <h5>Dianne Russell</h5>
                 <p>Trainer</p>
               </div>
             </div>
             <div class="team-grid-05">
               <div class="team-grid-text">
-                <h3>Cody Fisher</h3>
+                <h5>Cody Fisher</h5>
                 <p>Trainer</p>
               </div>
             </div>
             <div class="team-grid-06">
               <div class="team-grid-text">
-                <h3>Theresa Webb</h3>
+                <h5>Theresa Webb</h5>
                 <p>Trainer</p>
               </div>
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <footer>
