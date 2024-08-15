@@ -737,6 +737,11 @@ hr {
     width: 95%;
   }
 
+  .flex-container-02 .runner-text {
+    padding-left: 0px;
+    padding-bottom: 0px;
+  }
+
   .section-04 .bmi-container table, form {
     width: 95%;
   }
