@@ -222,21 +222,33 @@ section p {
 
 .section-02 {
   border-radius: 1.1rem;
-  background: rgba(34, 34, 34, 0.5);
+  border: 2px solid saddlebrown;
 }
 
 .flex-container-02 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* box-shadow: rgba(255, 255, 255, 0.5); */
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .flex-container-02 .runner-text {
   /* flex: 1 1 50%; */
+  padding-left: 50px;
+  padding-top: 40px;
+  padding-bottom: 41px;
   margin-right: 40%;
 }
 
+.runner-text, .runner-text h2, .runner-text p, .runner-image, .runner-image img {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 .flex-container-02 .runner-image {
+  padding-right: 50px;
+  padding-top: 40px;
+  padding-bottom: 41px;
   /* flex: 1 1 50%; */
 }
 
