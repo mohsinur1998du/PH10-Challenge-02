@@ -546,6 +546,31 @@ input, select {
   color: rgba(255, 255, 255, 0.5);
 }
 
+
+/* Special Section Starts */
+
+
+/* .nutrition-title h5, .nutrition-title p {
+  text-align: start;
+} */
+
+.nutrition-title h5 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+
+.nutrition-diet-plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nutrition-flexbox img {
+  border-radius: 20px;
+}
+
 /* footer {
   background-color: rgba(255, 255, 255, 0.1);
 } */
@@ -711,6 +736,8 @@ hr {
   } */
 
 
+
+
   .bmi, .flex-container-02, .flex-container, .banner, header nav ul, .footer-container {
     flex-direction: column;
     align-items: start;
@@ -741,6 +768,12 @@ hr {
     padding-left: 0px;
     padding-bottom: 0px;
   }
+
+
+  .nutrition-diet-plan {
+    flex-direction: column;
+  }
+
 
   .section-04 .bmi-container table, form {
     width: 95%;
