@@ -222,7 +222,6 @@ section p {
 
 .section-02 {
   border-radius: 1.1rem;
-  border: 2px solid saddlebrown;
 }
 
 .flex-container-02 {
@@ -230,7 +229,7 @@ section p {
   justify-content: space-between;
   align-items: center;
   /* box-shadow: rgba(255, 255, 255, 0.5); */
-  background-color: rgba(255, 255, 255, 0.1);
+  /* background-color: rgba(255, 255, 255, 0.1); */
 }
 
 .flex-container-02 .runner-text {
@@ -242,7 +241,7 @@ section p {
 }
 
 .runner-text, .runner-text h2, .runner-text p, .runner-image, .runner-image img {
-  background-color: rgba(255, 255, 255, 0.1);
+  /* background-color: rgba(255, 255, 255, 0.1); */
 }
 
 .flex-container-02 .runner-image {
