@@ -110,8 +110,9 @@ header {
 }
 
 .banner-01 .banner-title span {
-  font-size: 78px;
+  font-size: 120px;
   font-weight: 400;
+  line-height: 120%;
 }
 
 .btn, .btn-normal{
@@ -661,9 +662,9 @@ hr {
     font-weight: 900;
   }
 
-  .banner-01 span {
+  /* .banner-01 span {
     font-size: 36px;
-  }
+  } */
 
   .banner-badge-01 {
     width: 9rem;
